@@ -19,7 +19,7 @@ const getAllProduct = async (req, res) => {
     const products = await Product.find();
 
     // Send the products as a JSON response
-    res.status(200).json(products);
+    res.status(201).json(products);
   } catch (error) {
     // Handle any errors and send an error response
     res.status(500).json({ error: error.message });
